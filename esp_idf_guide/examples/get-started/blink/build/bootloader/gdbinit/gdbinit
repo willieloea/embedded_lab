@@ -1,0 +1,2 @@
+source /home/willieloea/Laboratory/embedded/embedded_lab/esp_idf_guide/examples/get-started/blink/build/bootloader/gdbinit/symbols
+source /home/willieloea/Laboratory/embedded/embedded_lab/esp_idf_guide/examples/get-started/blink/build/bootloader/gdbinit/connect

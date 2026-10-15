@@ -5,3 +5,6 @@ Arduino UNO form factor. I name all my computers - I'll call this one 'potato'.
 
 I will read through this to learn how to program potato:
 https://docs.espressif.com/projects/esp-idf/en/latest/esp32/
+
+I should also consult this:
+https://github.com/espressif/esp-idf/tree/master

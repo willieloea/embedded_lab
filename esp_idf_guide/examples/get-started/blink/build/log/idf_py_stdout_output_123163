@@ -1,0 +1,60 @@
+Command: cmake -G Ninja -B /home/willieloea/Laboratory/embedded/embedded_lab/esp_idf_guide/examples/get-started/blink/build -DPYTHON_DEPS_CHECKED=1 -DPYTHON=/home/willieloea/.espressif/tools/python/v6.1/venv/bin/python -DESP_PLATFORM=1 -DCCACHE_ENABLE=False /home/willieloea/Laboratory/embedded/embedded_lab/esp_idf_guide/examples/get-started/blink
+-- IDF_TARGET not set, using default target: esp32
+-- Found Git: /usr/bin/git (found version "2.55.0")
+-- Minimal build - ON
+-- The C compiler identification is GNU 15.2.0
+-- The CXX compiler identification is GNU 15.2.0
+-- The ASM compiler identification is GNU
+-- Found assembler: /home/willieloea/.espressif/tools/xtensa-esp-elf/esp-15.2.0_20251204/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /home/willieloea/.espressif/tools/xtensa-esp-elf/esp-15.2.0_20251204/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /home/willieloea/.espressif/tools/xtensa-esp-elf/esp-15.2.0_20251204/xtensa-esp-elf/bin/xtensa-esp32-elf-g++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Building ESP-IDF components for target esp32
+NOTE: Dependencies lock doesn't exist, solving dependencies.
+...NOTE: Updating lock file at /home/willieloea/Laboratory/embedded/embedded_lab/esp_idf_guide/examples/get-started/blink/dependencies.lock
+NOTE: Processing 2 dependencies:
+NOTE: [1/2] espressif/led_strip (3.1.0~1)
+NOTE: [2/2] idf (6.1.0)
+-- KCONFIG_REPORT_VERBOSITY not set, using default
+-- Project sdkconfig file /home/willieloea/Laboratory/embedded/embedded_lab/esp_idf_guide/examples/get-started/blink/sdkconfig
+-- Compiler supported targets: xtensa-esp-elf
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- App "blink" version: 0b0d9e4-dirty
+-- Found Python3: /home/willieloea/.espressif/tools/python/v6.1/venv/bin/python (found version "3.14.7") found components: Interpreter
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+-- Found Threads: TRUE
+-- Performing Test C_COMPILER_SUPPORTS_WFORMAT_SIGNEDNESS
+-- Performing Test C_COMPILER_SUPPORTS_WFORMAT_SIGNEDNESS - Success
+-- Setting up mbedtls configuration
+-- Linkage type is PUBLIC
+-- Adding linker script /home/willieloea/.espressif/v6.1/esp-idf/components/esp_system/ld/esp32/memory.ld.in
+--   -> Preprocessing .in script: /home/willieloea/.espressif/v6.1/esp-idf/components/esp_system/ld/esp32/memory.ld.in
+-- Adding linker script /home/willieloea/.espressif/v6.1/esp-idf/components/esp_system/ld/esp32/sections.ld.in
+--   -> Preprocessing .in script: /home/willieloea/.espressif/v6.1/esp-idf/components/esp_system/ld/esp32/sections.ld.in
+--   -> Applying ldgen processing: /home/willieloea/Laboratory/embedded/embedded_lab/esp_idf_guide/examples/get-started/blink/build/esp-idf/esp_system/ld/sections.ld.in
+-- Adding linker script /home/willieloea/.espressif/v6.1/esp-idf/components/esp_rom/esp32/ld/esp32.rom.ld
+-- Adding linker script /home/willieloea/.espressif/v6.1/esp-idf/components/esp_rom/esp32/ld/esp32.rom.api.ld
+-- Adding linker script /home/willieloea/.espressif/v6.1/esp-idf/components/esp_rom/esp32/ld/esp32.rom.libgcc.ld
+-- Adding linker script /home/willieloea/.espressif/v6.1/esp-idf/components/esp_rom/esp32/ld/esp32.rom.libc-funcs.ld
+-- Adding linker script /home/willieloea/.espressif/v6.1/esp-idf/components/soc/esp32/ld/esp32.peripherals.ld
+-- Adding linker script /home/willieloea/.espressif/v6.1/esp-idf/components/esp_hal_regi2c/esp32/rom.regi2c.ld
+-- Components: app_update bootloader bootloader_support cxx efuse esp_app_format esp_blockdev esp_bootloader_format esp_common esp_driver_bitscrambler esp_driver_dma esp_driver_gpio esp_driver_rmt esp_driver_spi esp_hal_ana_conv esp_hal_clock esp_hal_dma esp_hal_gpio esp_hal_gpspi esp_hal_i2s esp_hal_mspi esp_hal_pmu esp_hal_regi2c esp_hal_rmt esp_hal_rtc_timer esp_hal_security esp_hal_systimer esp_hal_timg esp_hal_touch_sens esp_hal_uart esp_hal_usb esp_hal_wdt esp_hw_support esp_libc esp_mm esp_partition esp_pm esp_psram esp_rom esp_security esp_stdio esp_system esp_timer esp_usb_cdc_rom_console espressif__led_strip esptool_py freertos hal heap log main mbedtls partition_table pthread soc spi_flash xtensa
+-- Component paths: /home/willieloea/.espressif/v6.1/esp-idf/components/app_update /home/willieloea/.espressif/v6.1/esp-idf/components/bootloader /home/willieloea/.espressif/v6.1/esp-idf/components/bootloader_support /home/willieloea/.espressif/v6.1/esp-idf/components/cxx /home/willieloea/.espressif/v6.1/esp-idf/components/efuse /home/willieloea/.espressif/v6.1/esp-idf/components/esp_app_format /home/willieloea/.espressif/v6.1/esp-idf/components/esp_blockdev /home/willieloea/.espressif/v6.1/esp-idf/components/esp_bootloader_format /home/willieloea/.espressif/v6.1/esp-idf/components/esp_common /home/willieloea/.espressif/v6.1/esp-idf/components/esp_driver_bitscrambler /home/willieloea/.espressif/v6.1/esp-idf/components/esp_driver_dma /home/willieloea/.espressif/v6.1/esp-idf/components/esp_driver_gpio /home/willieloea/.espressif/v6.1/esp-idf/components/esp_driver_rmt /home/willieloea/.espressif/v6.1/esp-idf/components/esp_driver_spi /home/willieloea/.espressif/v6.1/esp-idf/components/esp_hal_ana_conv /home/willieloea/.espressif/v6.1/esp-idf/components/esp_hal_clock /home/willieloea/.espressif/v6.1/esp-idf/components/esp_hal_dma /home/willieloea/.espressif/v6.1/esp-idf/components/esp_hal_gpio /home/willieloea/.espressif/v6.1/esp-idf/components/esp_hal_gpspi /home/willieloea/.espressif/v6.1/esp-idf/components/esp_hal_i2s /home/willieloea/.espressif/v6.1/esp-idf/components/esp_hal_mspi /home/willieloea/.espressif/v6.1/esp-idf/components/esp_hal_pmu /home/willieloea/.espressif/v6.1/esp-idf/components/esp_hal_regi2c /home/willieloea/.espressif/v6.1/esp-idf/components/esp_hal_rmt /home/willieloea/.espressif/v6.1/esp-idf/components/esp_hal_rtc_timer /home/willieloea/.espressif/v6.1/esp-idf/components/esp_hal_security /home/willieloea/.espressif/v6.1/esp-idf/components/esp_hal_systimer /home/willieloea/.espressif/v6.1/esp-idf/components/esp_hal_timg /home/willieloea/.espressif/v6.1/esp-idf/components/esp_hal_touch_sens /home/willieloea/.espressif/v6.1/esp-idf/components/esp_hal_uart /home/willieloea/.espressif/v6.1/esp-idf/components/esp_hal_usb /home/willieloea/.espressif/v6.1/esp-idf/components/esp_hal_wdt /home/willieloea/.espressif/v6.1/esp-idf/components/esp_hw_support /home/willieloea/.espressif/v6.1/esp-idf/components/esp_libc /home/willieloea/.espressif/v6.1/esp-idf/components/esp_mm /home/willieloea/.espressif/v6.1/esp-idf/components/esp_partition /home/willieloea/.espressif/v6.1/esp-idf/components/esp_pm /home/willieloea/.espressif/v6.1/esp-idf/components/esp_psram /home/willieloea/.espressif/v6.1/esp-idf/components/esp_rom /home/willieloea/.espressif/v6.1/esp-idf/components/esp_security /home/willieloea/.espressif/v6.1/esp-idf/components/esp_stdio /home/willieloea/.espressif/v6.1/esp-idf/components/esp_system /home/willieloea/.espressif/v6.1/esp-idf/components/esp_timer /home/willieloea/.espressif/v6.1/esp-idf/components/esp_usb_cdc_rom_console /home/willieloea/Laboratory/embedded/embedded_lab/esp_idf_guide/examples/get-started/blink/managed_components/espressif__led_strip /home/willieloea/.espressif/v6.1/esp-idf/components/esptool_py /home/willieloea/.espressif/v6.1/esp-idf/components/freertos /home/willieloea/.espressif/v6.1/esp-idf/components/hal /home/willieloea/.espressif/v6.1/esp-idf/components/heap /home/willieloea/.espressif/v6.1/esp-idf/components/log /home/willieloea/Laboratory/embedded/embedded_lab/esp_idf_guide/examples/get-started/blink/main /home/willieloea/.espressif/v6.1/esp-idf/components/mbedtls /home/willieloea/.espressif/v6.1/esp-idf/components/partition_table /home/willieloea/.espressif/v6.1/esp-idf/components/pthread /home/willieloea/.espressif/v6.1/esp-idf/components/soc /home/willieloea/.espressif/v6.1/esp-idf/components/spi_flash /home/willieloea/.espressif/v6.1/esp-idf/components/xtensa
+-- Configuring done (11.3s)
+-- Generating done (0.6s)
+-- Build files have been written to: /home/willieloea/Laboratory/embedded/embedded_lab/esp_idf_guide/examples/get-started/blink/build

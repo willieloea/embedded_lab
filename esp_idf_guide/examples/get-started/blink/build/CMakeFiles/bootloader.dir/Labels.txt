@@ -1,0 +1,13 @@
+# Target labels
+ bootloader
+# Source files and their labels
+/home/willieloea/Laboratory/embedded/embedded_lab/esp_idf_guide/examples/get-started/blink/build/CMakeFiles/bootloader
+/home/willieloea/Laboratory/embedded/embedded_lab/esp_idf_guide/examples/get-started/blink/build/CMakeFiles/bootloader.rule
+/home/willieloea/Laboratory/embedded/embedded_lab/esp_idf_guide/examples/get-started/blink/build/CMakeFiles/bootloader-complete.rule
+/home/willieloea/Laboratory/embedded/embedded_lab/esp_idf_guide/examples/get-started/blink/build/bootloader-prefix/src/bootloader-stamp/bootloader-build.rule
+/home/willieloea/Laboratory/embedded/embedded_lab/esp_idf_guide/examples/get-started/blink/build/bootloader-prefix/src/bootloader-stamp/bootloader-configure.rule
+/home/willieloea/Laboratory/embedded/embedded_lab/esp_idf_guide/examples/get-started/blink/build/bootloader-prefix/src/bootloader-stamp/bootloader-download.rule
+/home/willieloea/Laboratory/embedded/embedded_lab/esp_idf_guide/examples/get-started/blink/build/bootloader-prefix/src/bootloader-stamp/bootloader-install.rule
+/home/willieloea/Laboratory/embedded/embedded_lab/esp_idf_guide/examples/get-started/blink/build/bootloader-prefix/src/bootloader-stamp/bootloader-mkdir.rule
+/home/willieloea/Laboratory/embedded/embedded_lab/esp_idf_guide/examples/get-started/blink/build/bootloader-prefix/src/bootloader-stamp/bootloader-patch.rule
+/home/willieloea/Laboratory/embedded/embedded_lab/esp_idf_guide/examples/get-started/blink/build/bootloader-prefix/src/bootloader-stamp/bootloader-update.rule
