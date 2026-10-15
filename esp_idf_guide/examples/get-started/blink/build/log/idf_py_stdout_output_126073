@@ -1,49 +1,0 @@
-Command: ninja flash
-[1/5] cd /home/willieloea/Laboratory/embedded/embedded_lab/esp_idf_guide/examples/get-started/blink/build && /home/willieloea/.espressif/tools/python/v6.1/venv/bin/python /home/willieloea/.espressif/v6.1/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 partition --type app /home/willieloea/Laboratory/embedded/embedded_lab/esp_idf_guide/examples/get-started/blink/build/partition_table/partition-table.bin /home/willieloea/Laboratory/embedded/embedded_lab/esp_idf_guide/examples/get-started/blink/build/blink.bin
-blink.bin binary size 0x1fed0 bytes. Smallest app partition is 0x100000 bytes. 0xe0130 bytes (88%) free.
-[2/5] Performing build step for 'bootloader'
-[1/1] cd /home/willieloea/Laboratory/embedded/embedded_lab/esp_idf_guide/examples/get-started/blink/build/bootloader && /home/willieloea/.espressif/tools/python/v6.1/venv/bin/python /home/willieloea/.espressif/v6.1/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x1000 /home/willieloea/Laboratory/embedded/embedded_lab/esp_idf_guide/examples/get-started/blink/build/bootloader/bootloader.bin
-Bootloader binary size 0x6640 bytes. 0x9c0 bytes (9%) free.
-[3/5] No install step for 'bootloader'
-[4/5] Completed 'bootloader'
-[4/5] Running utility command for flash
-esptool --chip esp32 -p /dev/ttyUSB0 -b 115200 --before=default-reset --after=hard-reset write-flash --flash-mode dio --flash-freq 40m --flash-size 2MB 0x1000 bootloader/bootloader.bin 0x8000 partition_table/partition-table.bin 0x10000 blink.bin --skip-flashed
-esptool v5.5.0
-Serial port /dev/ttyUSB0:
-Connecting.....
-[1A[2K[1A[2KConnected to ESP32 on /dev/ttyUSB0:
-Chip type:          ESP32-D0WD-V3 (revision v3.1)
-Features:           Wi-Fi, BT, Dual Core + LP Core, 240MHz, Vref calibration in eFuse, Coding Scheme None
-Crystal frequency:  40MHz
-MAC:                a0:a3:b3:aa:0c:50
-
-Uploading stub flasher...
-Running stub flasher...
-[1A[2K[1A[2KStub flasher running.
-
-Configuring flash size...
-
-Writing 'bootloader/bootloader.bin' at 0x00001000...
-SHA digest in image updated.
-Comparing flash contents against new data...
-[1A[2KFlash will be erased from 0x00001000 to 0x00007fff...
-Compressed 26176 bytes to 16583...
-[2KWriting at 0x00007530 [38;2;249;38;114m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m[38;2;249;38;114m╸[0m  98.8% 16.00kB/16.19kB [1s] [2KWriting at 0x00007640 [38;2;114;156;31m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m 100.0% 16.19kB/16.19kB [1s] 
-[1A[2K[1A[2KWrote 26176 bytes (16583 compressed) at 0x00001000 in 1.7 seconds (124.2 kbit/s).
-Verifying written data...
-[1A[2KHash of data verified.
-
-Writing 'partition_table/partition-table.bin' at 0x00008000...
-Comparing flash contents against new data...
-[1A[2K'partition_table/partition-table.bin' at 0x00008000 already in flash, skipping write.
-
-Writing 'blink.bin' at 0x00010000...
-Comparing flash contents against new data...
-[1A[2KFlash will be erased from 0x00010000 to 0x0002ffff...
-Compressed 130768 bytes to 75361...
-[2KWriting at 0x0001ae4a [38;2;249;38;114m━━━━━━[0m[38;2;249;38;114m╸[0m[38;5;237m━━━━━━━━━━━━━━━━━━━━━━━[0m  21.7% 16.00kB/73.59kB [1s] [2KWriting at 0x00020f69 [38;2;249;38;114m━━━━━━━━━━━━━[0m[38;5;237m╺[0m[38;5;237m━━━━━━━━━━━━━━━━[0m  43.5% 32.00kB/73.59kB [2s] [2KWriting at 0x000267f4 [38;2;249;38;114m━━━━━━━━━━━━━━━━━━━[0m[38;2;249;38;114m╸[0m[38;5;237m━━━━━━━━━━[0m  65.2% 48.00kB/73.59kB [4s] [2KWriting at 0x0002c2e9 [38;2;249;38;114m━━━━━━━━━━━━━━━━━━━━━━━━━━[0m[38;5;237m╺[0m[38;5;237m━━━[0m  87.0% 64.00kB/73.59kB [5s] [2KWriting at 0x0002fed0 [38;2;114;156;31m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m 100.0% 73.59kB/73.59kB [6s] 
-[1A[2K[1A[2KWrote 130768 bytes (75361 compressed) at 0x00010000 in 6.9 seconds (151.7 kbit/s).
-Verifying written data...
-[1A[2KHash of data verified.
-
-Hard resetting via RTS pin...

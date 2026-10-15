@@ -1,6 +1,0 @@
-Command: cmake -G Ninja -B /home/willieloea/Laboratory/embedded/embedded_lab/esp_idf_guide/examples/get-started/blink/build -DPYTHON_DEPS_CHECKED=1 -DPYTHON=/home/willieloea/.espressif/tools/python/v6.1/venv/bin/python -DESP_PLATFORM=1 -DCCACHE_ENABLE=False /home/willieloea/Laboratory/embedded/embedded_lab/esp_idf_guide/examples/get-started/blink
-Loading defaults file /home/willieloea/Laboratory/embedded/embedded_lab/esp_idf_guide/examples/get-started/blink/sdkconfig.defaults...
-Loading defaults file /home/willieloea/Laboratory/embedded/embedded_lab/esp_idf_guide/examples/get-started/blink/sdkconfig.defaults.esp32...
-NOTE: Kconfig parser version: 1
-NOTE: Kconfig defaults policy: use sdkconfig
-NOTE: Status: Finished successfully
